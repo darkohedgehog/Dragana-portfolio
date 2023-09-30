@@ -43,9 +43,10 @@ const Education = () => {
           badge="2016 - 2018"
           title="Business Development Manager"
           subTitle="City Express doo Member of Austrian Post Group, Belgrade"
-          des="Responsible for data collection and extraction, turning data into information useful for
-          the company and customer.Participation in project team in charge of the new setup of Global KPIs for British Petroleum. Responsible for validation and accuracy of Global 11KPIs, 2nd and 3rd layer KPIs. Set up and alignment of Vendor and Carrier Management reporting for each region in
-          which the client owns the platforms..."
+          des="Research of all opportunities with the aim of improving existing business, present
+          economic situation and market position. Identification of new trends and ideas by market research, with the proposal of
+          potential business ventures and offerings. Managing with one or more projects within the company, mostly projects related to
+          revenue quality improvement..."
         />
       </div>
       <div className="w-full h-full hidden lgl:flex justify-center items-center">
