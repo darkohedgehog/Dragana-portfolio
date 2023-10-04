@@ -70,7 +70,13 @@ const Education = () => {
         <ResumeCard
           badge="2022"
           title="Advanced DAX for Microsoft Power BI Desktop"
-          subTitle="Udemy"
+          subTitle="Maven Analytics LLC"
+          des=""
+        />
+        <ResumeCard
+          badge="2023"
+          title="SAS Visual Data Mining and Machine Learning on SAS Viya"
+          subTitle="SAS"
           des=""
         />
       </div>

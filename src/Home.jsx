@@ -2,13 +2,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaUser, FaEnvelope } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
+import {PiGraduationCapLight} from "react-icons/pi";
 import { MdWork } from "react-icons/md";
 import { FaViber } from "react-icons/fa";
 import Left from "./components/home/Left";
 import About from "./components/about/About";
 import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
-
+import EducationCert from "./components/education/EducationCert";
 import Contact from "./components/contact/Contact";
 
 
@@ -16,6 +17,7 @@ const Home = () => {
   const [about, setAbout] = useState(true);
   const [resume, setResume] = useState(false);
   const [projects, setProjects] = useState(false);
+  const [education, setEducation] = useState(false);
   const [contact, setContact] = useState(false);
  
  
@@ -34,6 +36,7 @@ const Home = () => {
               setAbout(true) &
               setResume(false) &
               setProjects(false) &
+              setEducation(false) &
               setContact(false)
             }
             className={`${
@@ -54,6 +57,7 @@ const Home = () => {
               setAbout(false) &
               setResume(true) &
               setProjects(false) &
+              setEducation(false) &
               setContact(false)
             }
             className={`${
@@ -73,6 +77,7 @@ const Home = () => {
               setAbout(false) &
               setResume(false) &
               setProjects(true) &
+              setEducation(false) &
               setContact(false)
             }
             className={`${
@@ -84,6 +89,26 @@ const Home = () => {
             <MdWork />
             <span className="text-black font-medium text-xs uppercase bg-emerald-400 px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
               Projects
+            </span>
+          </span>
+          {/* Education Icon */}
+          <span
+            onClick={() =>
+              setAbout(false) &
+              setResume(false) &
+              setProjects(false) &
+              setEducation(true) &
+              setContact(false)
+            }
+            className={`${
+              education
+                ? "text-emerald-400"
+                : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-emerald-400 duration-300 cursor-pointer relative group"
+              } w-full h-6 text-xl flex items-center justify-center hover:text-emerald-400 duration-300 cursor-pointer relative group`}
+            >
+            <PiGraduationCapLight />
+            <span className="text-black font-medium text-xs uppercase bg-emerald-400 px-4 py-[1px] rounded-xl absolute left-0 translate-x-8 group-hover:translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20">
+            Certificates
             </span>
           </span>
          
@@ -129,6 +154,7 @@ const Home = () => {
             <About />
             <Resume />
             <Projects />
+            <EducationCert />
             <Contact />
           </div>
           {/* ======================== Smaller device content End ========================== */}
@@ -161,8 +187,15 @@ const Home = () => {
                 <Projects />
               </motion.div>
             )}
-            
-            
+            {education && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <EducationCert />
+              </motion.div>
+            )}
             {contact && (
               <motion.div
                 initial={{ opacity: 0 }}

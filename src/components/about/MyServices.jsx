@@ -1,14 +1,14 @@
 import { BsBank } from "react-icons/bs";
 import { LiaTruckLoadingSolid } from "react-icons/lia";
 import { SiAntdesign } from "react-icons/si";
-import { SiGoogleanalytics } from "react-icons/si";
+import { SiQlik } from "react-icons/si";
 import ServicesCard from "./ServicesCard";
 
 const MyServices = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <ServicesCard
-        icons={<SiGoogleanalytics />}
+        icons={<SiQlik />}
         title="Power BI"
         subTitle="Proficient in creating interactive visualizations and analyzing data to make informed business decisions."
       />
