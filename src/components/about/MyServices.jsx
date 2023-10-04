@@ -1,4 +1,4 @@
-import { BsBank } from "react-icons/bs";
+import { SiPowerbi } from "react-icons/si";
 import { LiaTruckLoadingSolid } from "react-icons/lia";
 import { SiAntdesign } from "react-icons/si";
 import { SiQlik } from "react-icons/si";
@@ -8,9 +8,11 @@ const MyServices = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <ServicesCard
-        icons={<SiQlik />}
+        icons={<SiPowerbi />}
         title="Power BI"
-        subTitle="Proficient in creating interactive visualizations and analyzing data to make informed business decisions."
+        subTitle="Proficient in creating
+        interactive visualizations
+        analyzing data in order to support business decisions..."
       />
       <ServicesCard
         icons={<SiAntdesign />}
@@ -24,9 +26,9 @@ const MyServices = () => {
         the company and customer."
       />
       <ServicesCard
-        icons={<BsBank />}
-        title="Mass Segment Development Specialist"
-        subTitle="Preparation and analysis of KPIs for employees in branches..."
+        icons={<SiQlik />}
+        title="Qlik Sense"
+        subTitle="Creating reports used for KPIs monitoring.Preparation and analysis of KPIs ..."
       />
     </div>
   );
