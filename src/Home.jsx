@@ -118,6 +118,7 @@ const Home = () => {
               setAbout(false) &
               setResume(false) &
               setProjects(false) &
+              setEducation(false) &
               setContact(true)
             }
             className={`${
