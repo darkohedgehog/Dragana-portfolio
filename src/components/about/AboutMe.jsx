@@ -15,11 +15,7 @@ const AboutMe = () => {
           <p className="text-base leading-6 ">
           My profile shines with a wide range of skills and experiences that could be beneficial for various business needs.
           </p>
-          <p className="text-base leading-6 ">
-          Proficient in creating interactive visualizations analyzing data in order to support business decisions
-          </p>
-          
-        </div>
+      </div>
       </div>
       <div className="w-full md:w-1/2 p-6">
         <ul className="flex flex-col gap-1">
